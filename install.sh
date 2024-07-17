@@ -33,10 +33,10 @@ tar -xzf icons/Newaita-Dark.tar.gz -C temp || { print_message "$RED" "Failed to 
 
 # Copy the theme and icons to the appropriate directories
 print_message "$BLUE" "Copying Desert-Dark theme..."
-cp -r temp/Desert-Dark ~/.local/share/themes || { print_message "$RED" "Failed to copy Desert-Dark theme."; exit 1; }
+cp -r temp/Desert-Dark ~/.local/share/themes/Desert-Dark || { print_message "$RED" "Failed to copy Desert-Dark theme."; exit 1; }
 
 print_message "$BLUE" "Copying Newaita-Dark icons..."
-cp -r temp/Newaita-Dark ~/.local/share/icons || { print_message "$RED" "Failed to copy Newaita-Dark icons."; exit 1; }
+cp -r temp/Newaita-Dark ~/.local/share/icons/Newaita-Dark || { print_message "$RED" "Failed to copy Newaita-Dark icons."; exit 1; }
 
 print_message "$BLUE" "Copying xfce4 configuration..."
 cp -rf xfce4-config/** ~/.config/xfce4 || { print_message "$RED" "Failed to copy xfce4 config."; exit 1; }
